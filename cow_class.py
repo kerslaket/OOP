@@ -3,13 +3,9 @@ from animal_class import*
 class Cow(Animal):
     """A Cow"""
 
-    def __init__(self):
-        super().__init__(1,3,6)
-        self.type = "Cow"
-
-    def grow(self,food,water):
-        if 
-
+    def __init__(self,name):
+        super().__init__(1,3,6,name)
+        self._type = "Cow"
 
 def main():
     new_cow = Cow()

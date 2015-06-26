@@ -3,7 +3,7 @@ import random
 class Animal:
     """A generic animal"""
 
-    def __init__(self,growth_rate,food_need,water_need):
+    def __init__(self,growth_rate,food_need,water_need,name):
         self._weight = 0
         self._days_growing = 0
         self._growth_rate = growth_rate
@@ -11,7 +11,7 @@ class Animal:
         self._water_need = water_need
         self._status = "Baby"
         self._type = "generic"
-        self._name = "Barry"
+        self._name = name
 
     def needs(self):
         return{"Food Need":self._food_need,"Water Need":self._water_need}
@@ -111,7 +111,7 @@ def manage_animal(animal):
      
 def main():
     #instantiate the class
-    new_animal = Animal(1,4,3)
+    new_animal = Animal(1,4,3,"MAthew")
     manage_animal(new_animal)
 
 if __name__== "__main__":

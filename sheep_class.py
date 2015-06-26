@@ -3,9 +3,9 @@ from animal_class import*
 class Sheep(Animal):
     """A Sheep"""
 
-    def __init__(self):
-        super().__init__(1,3,6)
-        self.type = "Sheep"
+    def __init__(self,name):
+        super().__init__(1,3,6,name)
+        self._type = "Sheep"
 
     def grow(self,food,water):
         if food >= self._food_need and water >= self._water_need:
