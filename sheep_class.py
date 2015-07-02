@@ -12,7 +12,7 @@ class Sheep(Animal):
             if self._status == "Old":
                 self._growth += self.growth_rate / 4
             else:
-                self._growth += self._growth_rate
+                self._weight += self._growth_rate
         self._days_growing += 1
         self._update_status()
 
